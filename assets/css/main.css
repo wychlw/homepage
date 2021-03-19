@@ -25,7 +25,7 @@ a:hover {
     background-attachment: fixed;
     background-position: 50% 50%;
     z-index: -2;
-    background-image: url(../../assets/img/bg.jpg);
+    background-image: url(https://cdn.jsdelivr.net/gh/wychlw/homepage@main/assets/img/bg.jpg);
 }
 
 #background::after{
