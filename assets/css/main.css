@@ -83,7 +83,7 @@ a:hover {
 }
 
 #footer_content {
-    width: fit-content;
     width: -moz-fit-content;
+    width: fit-content;
     opacity: 0.9;
 }
