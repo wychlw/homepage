@@ -1,0 +1,54 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+// @use 'vuetify/settings' with (
+//   $color-pack: false
+// );
+
+// <a> tag no styles
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.background_img {
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // position: fixed;
+    // background-size: cover;
+    // background-attachment: fixed;
+    // background-position: 50% 50%;
+    // z-index: -2;
+    background-image: url(https://cdn.jsdelivr.net/gh/wychlw/homepage@main/assets/img/bg.jpg);
+}
+
+.toggle_theme {
+    position: fixed;
+    right: 3%;
+    bottom: 120px;
+    z-index: 999;
+}
+
+@media screen and (max-width: 520px) {
+    .toggle_theme {
+      position: fixed;
+      right: 3%;
+      bottom: calc(240px - 20vw);
+      z-index: 999;
+    }
+}
+
+@media screen and (max-width: 220px) {
+  .toggle_theme {
+    position: fixed;
+    right: 3%;
+    bottom: calc(450px - 100vw);
+    z-index: 999;
+  }
+}
