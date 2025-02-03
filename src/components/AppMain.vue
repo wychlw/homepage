@@ -187,7 +187,7 @@ const concat: Link[] = [
   }, {
     en_name: "PGP Key",
     zh_name: "NoNeed",
-    url: "https://github.com/wychlw/homepage/blob/main/public-key.txt",
+    url: "https://www.wcysite.com/public-key.txt",
     can_cn: true
   }
 ];
