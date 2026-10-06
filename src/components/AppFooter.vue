@@ -5,7 +5,7 @@
   >
     <v-row class="w-100">
       <v-col class="align-center text-right">
-        &copy; 2021 - 2024 泠妄 with <v-icon>mdi-heart</v-icon>
+        &copy; 2021 - {{ currentYear }} 泠妄 with <v-icon>mdi-heart</v-icon>
       </v-col>
       <v-col class="align-center text-left">
         Powered by
@@ -72,12 +72,14 @@
 </template>
 
 <script setup lang="ts">
+const currentYear = new Date().getFullYear();
+
 const hostname = window.location.hostname;
 
 // return: (url, text)
 const ipc_map = (hostname: string) => {
   if (hostname.includes('wcysite.cn')) {
-    return ['href="https://beian.miit.gov.cn/', '滇ICP备2020009434号-1'];
+    return ['https://beian.miit.gov.cn/', '滇ICP备2020009434号-1'];
   } else {
     return ['https://icp.gov.moe/?keyword=20210741', '萌ICP备20210741号'];
   }

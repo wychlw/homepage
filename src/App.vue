@@ -5,7 +5,7 @@
   <v-btn 
     color="primary" 
     :icon="toggle_theme_icon()" 
-    large 
+    size="large"
     class="toggle_theme"
     @click="toggle_theme"
   />

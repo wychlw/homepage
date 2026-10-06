@@ -47,7 +47,7 @@
         </v-row>
         <v-row class="align-center text-center">
           <template
-            v-for="l in gen_liks(links)"
+            v-for="l in gen_links(links)"
             :key="l.en_name"
           >
             <v-col>
@@ -85,13 +85,13 @@
         <v-row class="align-center text-left">
           <v-col>
             <h3 class="text-h5">
-              <b :style="'color:' + get_color('tertiary') + ';'">#</b> Concat Me
+              <b :style="'color:' + get_color('tertiary') + ';'">#</b> Contact Me
             </h3>
           </v-col>
         </v-row>
         <v-row class="align-center text-center">
           <template
-            v-for="l in gen_liks(concat)"
+            v-for="l in gen_links(contacts)"
             :key="l.en_name"
           >
             <v-col>
@@ -139,7 +139,7 @@ interface Link {
 
 const hostname = window.location.hostname;
 
-const gen_liks = (l: Link[]) => {
+const gen_links = (l: Link[]) => {
   const is_cn = hostname.includes('wcysite.cn');
   return l.filter((i) => !is_cn || i.can_cn);
 };
@@ -173,7 +173,7 @@ const links: Link[] = [
   }, 
 ];
 
-const concat: Link[] = [
+const contacts: Link[] = [
   {
     en_name: "Mail: lingwang#wcysite.com",
     zh_name: "NoNeed",
